@@ -311,7 +311,7 @@ h4 {
   }
   .main .hero {
     display: flex;
-    margin-block-start: 4.8125rem;
+    margin-block-start: 5.4375rem;
   }
   .main .hero__left, .main .hero__right {
     display: block;
@@ -396,6 +396,84 @@ h4 {
     margin-inline-start: 1rem;
     width: 29.5%;
     padding: 0.625rem 1.125rem 0.5625rem;
+  }
+}
+@media (min-width: 75em) {
+  .header {
+    padding-block-start: 5.0625rem;
+    padding-inline-start: 10.3125rem;
+  }
+  .main {
+    padding: 0 10.3125rem;
+  }
+  .main .hero {
+    margin-block-start: 7.75rem;
+  }
+  .main .hero__left, .main .hero__right {
+    width: 25.5rem;
+    height: 28.6875rem;
+  }
+  .main .hero__left {
+    margin-inline-start: -13.75rem;
+  }
+  .main .hero__right {
+    margin-inline-end: -13.75rem;
+  }
+  .main .hero__content {
+    background-size: 34.6875rem 23.625rem;
+  }
+  .main .hero__content__heading {
+    margin-block-start: 4.4375rem;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .main .hero__content__para {
+    margin: 1.5rem auto 0;
+    width: 75.6%;
+  }
+  .main .hero__content__image {
+    margin-block-start: 4rem;
+  }
+  .main .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main .cards .card {
+    flex-direction: column;
+  }
+  .main .cards .card .passions {
+    padding: 29px 80px 29px;
+  }
+  .main .cards .card .financial-freedom {
+    padding: 38px 80px 37px;
+  }
+  .main .cards .card .lifestyle {
+    padding: 36px 80px 34px;
+  }
+  .main .cards .card .work-anywhere {
+    padding: 45px 80px;
+  }
+  .main .cards .card__image {
+    scale: 1;
+  }
+  .main .cards .card__image__container {
+    margin: 0;
+  }
+  .main .cards .card__align__right {
+    padding: 0;
+    padding-block-start: 48px;
+  }
+  .main .cards .card__align__left {
+    padding: 0;
+  }
+  .main .cards .card__content {
+    margin: 0;
+    min-width: 14.875rem;
+  }
+  .main .cards .card__heading {
+    margin-block-start: 3rem;
+  }
+  .main .cards .card__para {
+    margin-block-start: 1.4375rem;
   }
 }
 

@@ -371,7 +371,7 @@ h4 {
 
     .hero {
       display: flex;
-      margin-block-start: pxToRem(77px);
+      margin-block-start: pxToRem(87px);
 
       &__left,
       &__right {
@@ -480,6 +480,110 @@ h4 {
       margin-inline-start: pxToRem(16px);
       width: 29.5%;
       padding: pxToRem(10px) pxToRem(18px) pxToRem(9px);
+    }
+  }
+}
+
+@media (min-width: 75em) {
+  .header {
+    padding-block-start: pxToRem(81px);
+    padding-inline-start: pxToRem(165px);
+  }
+
+  .main {
+    padding: 0 pxToRem(165px);
+
+    .hero {
+      margin-block-start: pxToRem(124px);
+
+      &__left,
+      &__right {
+        width: pxToRem(408px);
+        height: pxToRem(459px);
+      }
+
+      &__left {
+        margin-inline-start: pxToRem(-220px);
+      }
+
+      &__right {
+        margin-inline-end: pxToRem(-220px);
+      }
+
+      &__content {
+        background-size: pxToRem(555px) pxToRem(378px);
+
+        &__heading {
+          margin-block-start: pxToRem(71px);
+
+          font-size: 48px;
+          line-height: 56px;
+        }
+
+        &__para {
+          margin: pxToRem(24px) auto 0;
+          width: 75.6%;
+        }
+
+        &__image {
+          margin-block-start: pxToRem(64px);
+        }
+      }
+    }
+
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+
+      .card {
+        flex-direction: column;
+
+        .passions {
+          padding: 29px 80px 29px;
+        }
+
+        .financial-freedom {
+          padding: 38px 80px 37px;
+        }
+
+        .lifestyle {
+          padding: 36px 80px 34px;
+        }
+
+        .work-anywhere {
+          padding: 45px 80px;
+        }
+
+        &__image {
+          scale: 1;
+
+          &__container {
+            margin: 0;
+          }
+        }
+
+        &__align {
+          &__right {
+            padding: 0;
+            padding-block-start: calc(250px - 202px);
+          }
+          &__left {
+            padding: 0;
+          }
+        }
+
+        &__content {
+          margin: 0;
+          min-width: pxToRem(238px);
+        }
+
+        &__heading {
+          margin-block-start: pxToRem(48px);
+        }
+
+        &__para {
+          margin-block-start: pxToRem(23px);
+        }
+      }
     }
   }
 }
