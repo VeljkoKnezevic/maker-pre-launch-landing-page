@@ -98,6 +98,9 @@ h4 {
   scale: 0.75;
 }
 .cards .card__image__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #093f68;
   border-radius: 2.8125rem;
   width: 45%;
@@ -270,6 +273,7 @@ h4 {
   border: 2px solid #093f68;
   padding: 0.75rem 8.8125rem 0.6875rem 1.125rem;
   margin-block-start: 2.6875rem;
+  width: 100%;
 }
 .footer__input:focus {
   outline: none;
@@ -286,13 +290,113 @@ h4 {
   background: #3ee9e5;
   border-radius: 1.5rem;
   border: 2px solid #3ee9e5;
-  padding: 0.75rem 2.625rem 0.6875rem 2.625rem;
+  padding: 0.625rem 2.625rem 0.5625rem 2.625rem;
   margin-block-start: 2.25rem;
+  width: 100%;
 }
 .footer__button:hover {
   color: #ffffff;
   border-color: #3ee9e5;
   background-color: #080c20;
+}
+
+@media (min-width: 37.5em) {
+  .header {
+    padding-block-start: 3rem;
+    padding-inline-start: 2.4375rem;
+    justify-content: flex-start;
+  }
+  .main {
+    padding: 0 6.0625rem;
+  }
+  .main .hero {
+    display: flex;
+    margin-block-start: 4.8125rem;
+  }
+  .main .hero__left, .main .hero__right {
+    display: block;
+    width: 19.625rem;
+    height: 22.25rem;
+  }
+  .main .hero__left {
+    margin-inline-start: -18.125rem;
+  }
+  .main .hero__right {
+    margin-inline-end: -18.125rem;
+  }
+  .main .hero__mobile {
+    display: none;
+  }
+  .main .hero__content {
+    min-width: 28.5625rem;
+    margin: 0 0.625rem;
+    background: url(./assets/bg-footer-squiggle.svg);
+    background-repeat: no-repeat;
+    background-size: 386px 268px;
+  }
+  .main .hero__content__heading {
+    margin-block-start: 3.1875rem;
+  }
+  .main .hero__content__para {
+    margin-block-start: 1.5rem;
+  }
+  .main .cards {
+    gap: 2.5rem;
+    margin-block-start: 6.8125rem;
+  }
+  .main .cards .card {
+    display: flex;
+  }
+  .main .cards .card__align__left {
+    padding-inline-start: 3.625rem;
+  }
+  .main .cards .card__align__right {
+    padding-inline-end: 3.625rem;
+  }
+  .main .cards .card__content {
+    margin-inline-start: 3.4375rem;
+    min-width: 21.25rem;
+  }
+  .main .cards .card__heading {
+    text-align: start;
+  }
+  .main .cards .card__para {
+    text-align: start;
+  }
+  .main .pricing {
+    margin-block-start: 8.8125rem;
+  }
+  .main .free {
+    margin: 0 3.9375rem;
+    margin-block-start: 4.9375rem;
+    padding: 49px 40px 48px 36px;
+  }
+  .main .paid {
+    margin: 0 3.9375rem;
+    margin-block-start: 4.0625rem;
+    padding: 3.8125rem 2.375rem 3.75rem 2.375rem;
+  }
+  .footer {
+    padding: 0 9.0625rem;
+    margin-block-start: 8.4375rem;
+    padding-block-end: 7.4375rem;
+    background-size: 63.875rem 8.75rem;
+  }
+  .footer__input-and-button {
+    display: flex;
+    align-items: center;
+    margin-block-start: 29px;
+  }
+  .footer__input {
+    margin-block-start: 0;
+    width: 67%;
+  }
+  .footer__button {
+    margin-block-start: 0;
+    margin-inline-start: 1rem;
+    width: 29.5%;
+    padding: 0.625rem 1.125rem 0.5625rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

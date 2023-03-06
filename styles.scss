@@ -165,6 +165,9 @@ h4 {
     }
 
     &__image__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: $blue;
       border-radius: pxToRem(45px);
       width: 45%;
@@ -345,11 +348,138 @@ h4 {
     @include input();
     padding: pxToRem(12px) pxToRem(141px) pxToRem(11px) pxToRem(18px);
     margin-block-start: pxToRem(43px);
+    width: 100%;
   }
 
   &__button {
     @include button();
-    padding: pxToRem(12px) pxToRem(42px) pxToRem(11px) pxToRem(42px);
+    padding: pxToRem(10px) pxToRem(42px) pxToRem(9px) pxToRem(42px);
     margin-block-start: pxToRem(36px);
+    width: 100%;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .header {
+    padding-block-start: pxToRem(48px);
+    padding-inline-start: pxToRem(39px);
+    justify-content: flex-start;
+  }
+
+  .main {
+    padding: 0 pxToRem(97px);
+
+    .hero {
+      display: flex;
+      margin-block-start: pxToRem(77px);
+
+      &__left,
+      &__right {
+        display: block;
+        width: pxToRem(314px);
+        height: pxToRem(356px);
+      }
+
+      &__left {
+        margin-inline-start: pxToRem(-290px);
+      }
+
+      &__right {
+        margin-inline-end: pxToRem(-290px);
+      }
+
+      &__mobile {
+        display: none;
+      }
+
+      &__content {
+        min-width: pxToRem(457px);
+        margin: 0 pxToRem(10px);
+        background: url(./assets/bg-footer-squiggle.svg);
+        background-repeat: no-repeat;
+        background-size: 386px 268px;
+
+        &__heading {
+          margin-block-start: pxToRem(51px);
+        }
+
+        &__para {
+          margin-block-start: pxToRem(24px);
+        }
+      }
+    }
+
+    .cards {
+      gap: pxToRem(40px);
+      margin-block-start: pxToRem(109px);
+
+      .card {
+        display: flex;
+
+        &__align {
+          &__left {
+            padding-inline-start: pxToRem(calc(155px - 97px));
+          }
+
+          &__right {
+            padding-inline-end: pxToRem(calc(155px - 97px));
+          }
+        }
+
+        &__content {
+          margin-inline-start: pxToRem(55px);
+          min-width: pxToRem(340px);
+        }
+
+        &__heading {
+          text-align: start;
+        }
+
+        &__para {
+          text-align: start;
+        }
+      }
+    }
+
+    .pricing {
+      margin-block-start: pxToRem(141px);
+    }
+
+    .free {
+      margin: 0 pxToRem(63px);
+      margin-block-start: pxToRem(79px);
+      padding: 49px 40px 48px 36px;
+    }
+
+    .paid {
+      margin: 0 pxToRem(63px);
+      margin-block-start: pxToRem(65px);
+      padding: pxToRem(61px) pxToRem(38px) pxToRem(60px) pxToRem(38px);
+    }
+  }
+
+  .footer {
+    padding: 0 pxToRem(145px);
+    margin-block-start: pxToRem(135px);
+    padding-block-end: pxToRem(119px);
+    background-size: pxToRem(1022px) pxToRem(140px);
+
+    &__input-and-button {
+      display: flex;
+      align-items: center;
+      margin-block-start: 29px;
+    }
+
+    &__input {
+      margin-block-start: 0;
+      width: 67%;
+    }
+
+    &__button {
+      margin-block-start: 0;
+      margin-inline-start: pxToRem(16px);
+      width: 29.5%;
+      padding: pxToRem(10px) pxToRem(18px) pxToRem(9px);
+    }
   }
 }
