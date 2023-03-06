@@ -1,0 +1,298 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  background: #080c20;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 2.5rem;
+}
+
+.main {
+  padding: 0 1.5rem;
+}
+
+.hero__left, .hero__right {
+  display: none;
+}
+.hero__mobile {
+  width: 25.625rem;
+  height: 14.5625rem;
+  margin-block-start: 3.53125rem;
+  margin-inline-start: -1.5rem;
+  display: block;
+}
+.hero__content__heading {
+  margin: 0 auto;
+  margin-block-start: 2.96875rem;
+  width: 75%;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+.hero__content__heading--green {
+  color: #3ee9e5;
+}
+.hero__content__para {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #ffffff;
+  color: #777f98;
+  text-align: center;
+  margin-block-start: 1.4375rem;
+}
+.hero__content__image {
+  display: block;
+  margin: 0 auto;
+  margin-block-start: 2rem;
+}
+
+.cards {
+  display: grid;
+  gap: 3.5rem;
+  margin-block-start: 9rem;
+}
+.cards .card .passions {
+  padding: 1.375rem 1.5rem 1.375rem 1.875rem;
+}
+.cards .card .financial-freedom {
+  padding: 1.75rem 2rem;
+}
+.cards .card .lifestyle {
+  padding: 1.6875rem 1.875rem 1.625rem 1.875rem;
+}
+.cards .card .work-anywhere {
+  padding: 2.125rem 1.3125rem 2.0625rem 1.3125rem;
+}
+.cards .card__image {
+  scale: 0.75;
+}
+.cards .card__image__container {
+  background: #093f68;
+  border-radius: 2.8125rem;
+  width: 45%;
+  margin: 0 auto;
+}
+.cards .card__heading {
+  margin-block-start: 2rem;
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  text-align: center;
+  color: #ffffff;
+}
+.cards .card__para {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #ffffff;
+  text-align: center;
+  color: #777f98;
+  margin-block-start: 0.6875rem;
+}
+
+.pricing {
+  margin-block-start: 9rem;
+}
+.pricing__heading {
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  text-align: center;
+  color: #ffffff;
+}
+.pricing__para {
+  margin-block-start: 1.6875rem;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #ffffff;
+  text-align: center;
+  color: #777f98;
+}
+
+.free {
+  background: #093f68;
+  border-radius: 8px;
+  padding: 49px 29px 32px 30px;
+  margin-block-start: 4.6875rem;
+}
+.free__image {
+  position: absolute;
+  margin-block-start: -4.5rem;
+}
+.free__heading {
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: #ffffff;
+}
+.free__para {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-block-start: 1.1875rem;
+}
+.free__price {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 3.4375rem;
+  color: #ffffff;
+  margin-block-start: 1.625rem;
+}
+.free__benefits {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #ffffff;
+  padding-inline-start: 1.25rem;
+  list-style-image: url(./assets/icon-check-free.svg);
+  margin: 0;
+  margin-block-start: 1.1875rem;
+}
+.free__benefits__item + .free__benefits__item {
+  margin-block-start: 0.75rem;
+}
+
+.paid {
+  background: #3ee9e5;
+  border-radius: 0.5rem;
+  margin-block-start: 4.0625rem;
+  padding: 3.8125rem 1.8125rem 2rem 1.875rem;
+}
+.paid__image {
+  position: absolute;
+  margin-block-start: -5.875rem;
+}
+.paid__heading {
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: #080c20;
+}
+.paid__para {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #080c20;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-block-start: 1.1875rem;
+}
+.paid__price {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 3.4375rem;
+  color: #080c20;
+  margin-block-start: 1.625rem;
+}
+.paid__price--light {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  margin-inline-start: 0.46875rem;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.paid__benefits {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #080c20;
+  padding-inline-start: 1.25rem;
+  list-style-image: url(./assets/icon-check-paid.svg);
+  margin: 0;
+  margin-block-start: 1.1875rem;
+}
+.paid__benefits__item + .paid__benefits__item {
+  margin-block-start: 0.75rem;
+}
+
+.footer {
+  padding: 0 1.46875rem;
+  margin-block-start: 9rem;
+  padding-block-end: 10.25rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/bg-footer-squiggle.svg);
+  background-repeat: no-repeat;
+  background-size: 36.5rem 5rem;
+}
+.footer__text {
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  text-align: center;
+  color: #ffffff;
+}
+.footer__input {
+  background: #093f68;
+  border-radius: 1.5rem;
+  font-weight: 800;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #ffffff;
+  border: 2px solid #093f68;
+  padding: 0.75rem 8.8125rem 0.6875rem 1.125rem;
+  margin-block-start: 2.6875rem;
+}
+.footer__input:focus {
+  outline: none;
+  border-color: #3ee9e5;
+}
+.footer__button {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  text-align: center;
+  color: #093f68;
+  background: #3ee9e5;
+  border-radius: 1.5rem;
+  border: 2px solid #3ee9e5;
+  padding: 0.75rem 2.625rem 0.6875rem 2.625rem;
+  margin-block-start: 2.25rem;
+}
+.footer__button:hover {
+  color: #ffffff;
+  border-color: #3ee9e5;
+  background-color: #080c20;
+}
+
+/*# sourceMappingURL=style.css.map */
