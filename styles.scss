@@ -4,12 +4,11 @@
   @return math.div($pxValue, 16px) * 1rem;
 }
 
-$turquoise: #3ee9e5;
-$blue: #093f68;
-$grey: #777f98;
-$white: #ffffff;
-$black: #080c20;
-$error: #ff2965;
+$turquoise: hsl(179, 80%, 58%);
+$blue: hsl(206, 84%, 22%);
+$grey: hsl(225, 14%, 53%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(230, 60%, 8%);
 
 @mixin para() {
   font-weight: 500;
@@ -34,6 +33,7 @@ $error: #ff2965;
     color: $white;
     border-color: $turquoise;
     background-color: $black;
+    cursor: pointer;
   }
 }
 
@@ -397,7 +397,7 @@ h4 {
         margin: 0 pxToRem(10px);
         background: url(./assets/bg-footer-squiggle.svg);
         background-repeat: no-repeat;
-        background-size: 386px 268px;
+        background-size: pxToRem(386px) pxToRem(268px);
 
         &__heading {
           margin-block-start: pxToRem(51px);
@@ -448,7 +448,7 @@ h4 {
     .free {
       margin: 0 pxToRem(63px);
       margin-block-start: pxToRem(79px);
-      padding: 49px 40px 48px 36px;
+      padding: pxToRem(49px) pxToRem(40px) pxToRem(48px) pxToRem(36px);
     }
 
     .paid {
@@ -464,10 +464,10 @@ h4 {
     padding-block-end: pxToRem(119px);
     background-size: pxToRem(1022px) pxToRem(140px);
 
-    &__input-and-button {
+    &__form {
       display: flex;
       align-items: center;
-      margin-block-start: 29px;
+      margin-block-start: pxToRem(29px);
     }
 
     &__input {
@@ -495,6 +495,7 @@ h4 {
 
     .hero {
       margin-block-start: pxToRem(124px);
+      justify-content: center;
 
       &__left,
       &__right {
@@ -512,12 +513,13 @@ h4 {
 
       &__content {
         background-size: pxToRem(555px) pxToRem(378px);
+        background-position: top 0 left 50%;
 
         &__heading {
           margin-block-start: pxToRem(71px);
 
-          font-size: 48px;
-          line-height: 56px;
+          font-size: pxToRem(48px);
+          line-height: pxToRem(56px);
         }
 
         &__para {
@@ -538,19 +540,19 @@ h4 {
         flex-direction: column;
 
         .passions {
-          padding: 29px 80px 29px;
+          padding: pxToRem(29px) pxToRem(80px) pxToRem(29px);
         }
 
         .financial-freedom {
-          padding: 38px 80px 37px;
+          padding: pxToRem(38px) pxToRem(80px) pxToRem(37px);
         }
 
         .lifestyle {
-          padding: 36px 80px 34px;
+          padding: pxToRem(36px) pxToRem(80px) pxToRem(34px);
         }
 
         .work-anywhere {
-          padding: 45px 80px;
+          padding: pxToRem(45px) pxToRem(80px);
         }
 
         &__image {
@@ -564,7 +566,7 @@ h4 {
         &__align {
           &__right {
             padding: 0;
-            padding-block-start: calc(250px - 202px);
+            padding-block-start: pxToRem(calc(250px - 202px));
           }
           &__left {
             padding: 0;
@@ -589,8 +591,8 @@ h4 {
       margin-block-start: pxToRem(202px);
 
       &__heading {
-        font-size: 32px;
-        line-height: 44px;
+        font-size: pxToRem(32px);
+        line-height: pxToRem(44px);
       }
 
       &__para {
@@ -602,12 +604,13 @@ h4 {
 
     .options {
       display: flex;
+      justify-content: center;
     }
 
     .free {
       margin: 0;
       margin-block-start: pxToRem(117px);
-      margin-inline-start: calc(260px - 165px);
+      margin-inline-start: pxToRem(calc(260px - 165px));
 
       &__price {
         margin-block-start: pxToRem(24px);
@@ -630,16 +633,32 @@ h4 {
     margin-block-start: pxToRem(203px);
     padding-block-end: pxToRem(159px);
     background-size: pxToRem(1664px) pxToRem(228px);
+    background-position: top 0 left pxToRem(100px);
 
     &__text {
-      font-size: 32px;
-      line-height: 44px;
+      font-size: pxToRem(32px);
+      line-height: pxToRem(44px);
     }
 
-    &__input-and-button {
+    &__form {
       width: pxToRem(476px);
       margin: 0 auto;
-      margin-block-start: 42px;
+      margin-block-start: pxToRem(42px);
+    }
+
+    &__message {
+      width: 80%;
+      font-weight: 500;
+      font-size: pxToRem(12px);
+      line-height: pxToRem(25px);
+      margin-inline-start: pxToRem(18px);
+      margin-block-start: pxToRem(4px);
+      position: absolute;
+      display: none;
+    }
+
+    &__input {
+      width: 100%;
     }
   }
 }

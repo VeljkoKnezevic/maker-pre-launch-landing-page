@@ -18,7 +18,7 @@ body {
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
-  background: #080c20;
+  background: hsl(230, 60%, 8%);
 }
 
 p,
@@ -57,17 +57,17 @@ h4 {
   font-size: 2rem;
   line-height: 2.5rem;
   text-align: center;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
 }
 .hero__content__heading--green {
-  color: #3ee9e5;
+  color: hsl(179, 80%, 58%);
 }
 .hero__content__para {
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  color: #ffffff;
-  color: #777f98;
+  color: hsl(0, 0%, 100%);
+  color: hsl(225, 14%, 53%);
   text-align: center;
   margin-block-start: 1.4375rem;
 }
@@ -101,7 +101,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #093f68;
+  background: hsl(206, 84%, 22%);
   border-radius: 2.8125rem;
   width: 45%;
   margin: 0 auto;
@@ -112,15 +112,15 @@ h4 {
   font-size: 1.125rem;
   line-height: 1.5625rem;
   text-align: center;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
 }
 .cards .card__para {
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
   text-align: center;
-  color: #777f98;
+  color: hsl(225, 14%, 53%);
   margin-block-start: 0.6875rem;
 }
 
@@ -132,20 +132,20 @@ h4 {
   font-size: 1.5rem;
   line-height: 2.0625rem;
   text-align: center;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
 }
 .pricing__para {
   margin-block-start: 1.6875rem;
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
   text-align: center;
-  color: #777f98;
+  color: hsl(225, 14%, 53%);
 }
 
 .free {
-  background: #093f68;
+  background: hsl(206, 84%, 22%);
   border-radius: 8px;
   padding: 49px 29px 32px 30px;
   margin-block-start: 4.6875rem;
@@ -158,13 +158,13 @@ h4 {
   font-weight: 800;
   font-size: 1.125rem;
   line-height: 1.5625rem;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
 }
 .free__para {
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
   mix-blend-mode: normal;
   opacity: 0.6;
   margin-block-start: 1.1875rem;
@@ -173,7 +173,7 @@ h4 {
   font-weight: 800;
   font-size: 2.5rem;
   line-height: 3.4375rem;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
   margin-block-start: 1.625rem;
 }
 .free__benefits {
@@ -204,13 +204,13 @@ h4 {
   font-weight: 800;
   font-size: 1.125rem;
   line-height: 1.5625rem;
-  color: #080c20;
+  color: hsl(230, 60%, 8%);
 }
 .paid__para {
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  color: #080c20;
+  color: hsl(230, 60%, 8%);
   mix-blend-mode: normal;
   opacity: 0.6;
   margin-block-start: 1.1875rem;
@@ -221,7 +221,7 @@ h4 {
   font-weight: 800;
   font-size: 2.5rem;
   line-height: 3.4375rem;
-  color: #080c20;
+  color: hsl(230, 60%, 8%);
   margin-block-start: 1.625rem;
 }
 .paid__price--light {
@@ -236,7 +236,7 @@ h4 {
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  color: #080c20;
+  color: hsl(230, 60%, 8%);
   padding-inline-start: 1.25rem;
   list-style-image: url(./assets/icon-check-paid.svg);
   margin: 0;
@@ -264,20 +264,20 @@ h4 {
   color: #ffffff;
 }
 .footer__input {
-  background: #093f68;
+  background: hsl(206, 84%, 22%);
   border-radius: 1.5rem;
   font-weight: 800;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  color: #ffffff;
-  border: 2px solid #093f68;
+  color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(206, 84%, 22%);
   padding: 0.75rem 8.8125rem 0.6875rem 1.125rem;
   margin-block-start: 2.6875rem;
   width: 100%;
 }
 .footer__input:focus {
   outline: none;
-  border-color: #3ee9e5;
+  border-color: hsl(179, 80%, 58%);
 }
 .footer__button {
   font-family: "Manrope";
@@ -286,18 +286,19 @@ h4 {
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   text-align: center;
-  color: #093f68;
-  background: #3ee9e5;
+  color: hsl(206, 84%, 22%);
+  background: hsl(179, 80%, 58%);
   border-radius: 1.5rem;
-  border: 2px solid #3ee9e5;
+  border: 2px solid hsl(179, 80%, 58%);
   padding: 0.625rem 2.625rem 0.5625rem 2.625rem;
   margin-block-start: 2.25rem;
   width: 100%;
 }
 .footer__button:hover {
-  color: #ffffff;
-  border-color: #3ee9e5;
-  background-color: #080c20;
+  color: hsl(0, 0%, 100%);
+  border-color: hsl(179, 80%, 58%);
+  background-color: hsl(230, 60%, 8%);
+  cursor: pointer;
 }
 
 @media (min-width: 37.5em) {
@@ -332,7 +333,7 @@ h4 {
     margin: 0 0.625rem;
     background: url(./assets/bg-footer-squiggle.svg);
     background-repeat: no-repeat;
-    background-size: 386px 268px;
+    background-size: 24.125rem 16.75rem;
   }
   .main .hero__content__heading {
     margin-block-start: 3.1875rem;
@@ -369,7 +370,7 @@ h4 {
   .main .free {
     margin: 0 3.9375rem;
     margin-block-start: 4.9375rem;
-    padding: 49px 40px 48px 36px;
+    padding: 3.0625rem 2.5rem 3rem 2.25rem;
   }
   .main .paid {
     margin: 0 3.9375rem;
@@ -382,10 +383,10 @@ h4 {
     padding-block-end: 7.4375rem;
     background-size: 63.875rem 8.75rem;
   }
-  .footer__input-and-button {
+  .footer__form {
     display: flex;
     align-items: center;
-    margin-block-start: 29px;
+    margin-block-start: 1.8125rem;
   }
   .footer__input {
     margin-block-start: 0;
@@ -408,6 +409,7 @@ h4 {
   }
   .main .hero {
     margin-block-start: 7.75rem;
+    justify-content: center;
   }
   .main .hero__left, .main .hero__right {
     width: 25.5rem;
@@ -421,11 +423,12 @@ h4 {
   }
   .main .hero__content {
     background-size: 34.6875rem 23.625rem;
+    background-position: top 0 left 50%;
   }
   .main .hero__content__heading {
     margin-block-start: 4.4375rem;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
   .main .hero__content__para {
     margin: 1.5rem auto 0;
@@ -441,16 +444,16 @@ h4 {
     flex-direction: column;
   }
   .main .cards .card .passions {
-    padding: 29px 80px 29px;
+    padding: 1.8125rem 5rem 1.8125rem;
   }
   .main .cards .card .financial-freedom {
-    padding: 38px 80px 37px;
+    padding: 2.375rem 5rem 2.3125rem;
   }
   .main .cards .card .lifestyle {
-    padding: 36px 80px 34px;
+    padding: 2.25rem 5rem 2.125rem;
   }
   .main .cards .card .work-anywhere {
-    padding: 45px 80px;
+    padding: 2.8125rem 5rem;
   }
   .main .cards .card__image {
     scale: 1;
@@ -460,7 +463,7 @@ h4 {
   }
   .main .cards .card__align__right {
     padding: 0;
-    padding-block-start: 48px;
+    padding-block-start: 3rem;
   }
   .main .cards .card__align__left {
     padding: 0;
@@ -479,8 +482,8 @@ h4 {
     margin-block-start: 12.625rem;
   }
   .main .pricing__heading {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 2rem;
+    line-height: 2.75rem;
   }
   .main .pricing__para {
     margin: 0 auto;
@@ -489,11 +492,12 @@ h4 {
   }
   .main .options {
     display: flex;
+    justify-content: center;
   }
   .main .free {
     margin: 0;
     margin-block-start: 7.3125rem;
-    margin-inline-start: 95px;
+    margin-inline-start: 5.9375rem;
   }
   .main .free__price {
     margin-block-start: 1.5rem;
@@ -511,15 +515,29 @@ h4 {
     margin-block-start: 12.6875rem;
     padding-block-end: 9.9375rem;
     background-size: 104rem 14.25rem;
+    background-position: top 0 left 6.25rem;
   }
   .footer__text {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 2rem;
+    line-height: 2.75rem;
   }
-  .footer__input-and-button {
+  .footer__form {
     width: 29.75rem;
     margin: 0 auto;
-    margin-block-start: 42px;
+    margin-block-start: 2.625rem;
+  }
+  .footer__message {
+    width: 80%;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.5625rem;
+    margin-inline-start: 1.125rem;
+    margin-block-start: 0.25rem;
+    position: absolute;
+    display: none;
+  }
+  .footer__input {
+    width: 100%;
   }
 }
 
