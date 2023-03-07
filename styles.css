@@ -475,6 +475,52 @@ h4 {
   .main .cards .card__para {
     margin-block-start: 1.4375rem;
   }
+  .main .pricing {
+    margin-block-start: 12.625rem;
+  }
+  .main .pricing__heading {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .main .pricing__para {
+    margin: 0 auto;
+    margin-block-start: 1.5rem;
+    max-width: 33.75rem;
+  }
+  .main .options {
+    display: flex;
+  }
+  .main .free {
+    margin: 0;
+    margin-block-start: 7.3125rem;
+    margin-inline-start: 95px;
+  }
+  .main .free__price {
+    margin-block-start: 1.5rem;
+  }
+  .main .paid {
+    margin: 0;
+    margin-block-start: 6.5625rem;
+    margin-inline-start: 1.875rem;
+    margin-inline-end: 5.9375rem;
+  }
+  .main .paid__price {
+    margin-block-start: 1.5rem;
+  }
+  .footer {
+    margin-block-start: 12.6875rem;
+    padding-block-end: 9.9375rem;
+    background-size: 104rem 14.25rem;
+  }
+  .footer__text {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .footer__input-and-button {
+    width: 29.75rem;
+    margin: 0 auto;
+    margin-block-start: 42px;
+  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

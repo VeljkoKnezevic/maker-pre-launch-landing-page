@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +17,7 @@
       href="./assets/favicon-32x32.png"
     />
 
+    <script src="./app.js" defer></script>
     <title>Frontend Mentor | Maker pre-launch landing page</title>
   </head>
   <body>
@@ -135,38 +136,40 @@
         </p>
       </div>
 
-      <section class="free">
-        <img class="free__image" src="./assets/icon-free.svg" alt="" />
-        <h4 class="free__heading">Dip your toe</h4>
-        <p class="free__para">
-          Just getting started? No problem at all! Our free plan will take you a
-          long way.
-        </p>
-        <p class="free__price">Free</p>
-        <ul class="free__benefits">
-          <li class="free__benefits__item">Unlimited products</li>
-          <li class="free__benefits__item">Basic analytics</li>
-          <li class="free__benefits__item">Limited marketplace exposure</li>
-          <li class="free__benefits__item">10% fee per transaction</li>
-        </ul>
-      </section>
-      <section class="paid">
-        <img src="./assets/icon-paid.svg" alt="" class="paid__image" />
-        <h4 class="paid__heading">Dive right in</h4>
-        <p class="paid__para">
-          Ready for the big time? Our paid plan will help you take your business
-          to the next level.
-        </p>
-        <p class="paid__price">
-          $25.00 <span class="paid__price--light">/ month</span>
-        </p>
-        <ul class="paid__benefits">
-          <li class="paid__benefits__item">Custom domain</li>
-          <li class="paid__benefits__item">Advanced analytics and reports</li>
-          <li class="paid__benefits__item">High marketplace visibility</li>
-          <li class="paid__benefits__item">5% fee per transaction</li>
-        </ul>
-      </section>
+      <div class="options">
+        <section class="free">
+          <img class="free__image" src="./assets/icon-free.svg" alt="" />
+          <h4 class="free__heading">Dip your toe</h4>
+          <p class="free__para">
+            Just getting started? No problem at all! Our free plan will take you
+            a long way.
+          </p>
+          <p class="free__price">Free</p>
+          <ul class="free__benefits">
+            <li class="free__benefits__item">Unlimited products</li>
+            <li class="free__benefits__item">Basic analytics</li>
+            <li class="free__benefits__item">Limited marketplace exposure</li>
+            <li class="free__benefits__item">10% fee per transaction</li>
+          </ul>
+        </section>
+        <section class="paid">
+          <img src="./assets/icon-paid.svg" alt="" class="paid__image" />
+          <h4 class="paid__heading">Dive right in</h4>
+          <p class="paid__para">
+            Ready for the big time? Our paid plan will help you take your
+            business to the next level.
+          </p>
+          <p class="paid__price">
+            $25.00 <span class="paid__price--light">/ month</span>
+          </p>
+          <ul class="paid__benefits">
+            <li class="paid__benefits__item">Custom domain</li>
+            <li class="paid__benefits__item">Advanced analytics and reports</li>
+            <li class="paid__benefits__item">High marketplace visibility</li>
+            <li class="paid__benefits__item">5% fee per transaction</li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">

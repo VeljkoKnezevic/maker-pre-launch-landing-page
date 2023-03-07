@@ -585,5 +585,61 @@ h4 {
         }
       }
     }
+    .pricing {
+      margin-block-start: pxToRem(202px);
+
+      &__heading {
+        font-size: 32px;
+        line-height: 44px;
+      }
+
+      &__para {
+        margin: 0 auto;
+        margin-block-start: pxToRem(24px);
+        max-width: pxToRem(540px);
+      }
+    }
+
+    .options {
+      display: flex;
+    }
+
+    .free {
+      margin: 0;
+      margin-block-start: pxToRem(117px);
+      margin-inline-start: calc(260px - 165px);
+
+      &__price {
+        margin-block-start: pxToRem(24px);
+      }
+    }
+
+    .paid {
+      margin: 0;
+      margin-block-start: pxToRem(105px);
+      margin-inline-start: pxToRem(30px);
+      margin-inline-end: pxToRem(calc(260px - 165px));
+
+      &__price {
+        margin-block-start: pxToRem(24px);
+      }
+    }
+  }
+
+  .footer {
+    margin-block-start: pxToRem(203px);
+    padding-block-end: pxToRem(159px);
+    background-size: pxToRem(1664px) pxToRem(228px);
+
+    &__text {
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    &__input-and-button {
+      width: pxToRem(476px);
+      margin: 0 auto;
+      margin-block-start: 42px;
+    }
   }
 }
